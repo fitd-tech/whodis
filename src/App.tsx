@@ -16,14 +16,12 @@ function App() {
       setButtonLabelClassName('new-tone-slide-out')
 
       const backgroundColor = randomColor()
-      console.log('randomColor()', randomColor())
       const root = document.getElementsByTagName('html')[0]
       root.style.setProperty('background-color', backgroundColor)
     }
   }
 
   function handleButtonAnimationEnd(e: React.AnimationEvent) {
-    console.log('e from handleButtonAnimationEnd', e)
     if (e.animationName === 'boi') {
       setButtonClassName('new-tones-button ng-boing')
     } else if (e.animationName === 'glow-down') {
@@ -38,7 +36,6 @@ function App() {
   }
 
   function handleButtonLabelAnimationEnd(e: React.AnimationEvent) {
-    console.log('e from handleButtonLabelAnimationEnd', e)
     if (e.animationName === 'new-tone-slide-out') {
       setButtonLabel('who dis?')
       setButtonLabelClassName('who-dis-slide-in')
