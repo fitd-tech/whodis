@@ -51,26 +51,31 @@ function App() {
   }
 
   return (
-    <div>
-      <button
-        onClick={() => {
-          handleNewToneClick()
-        }}
-        className={buttonClassName}
-        onAnimationEnd={handleButtonAnimationEnd}
-      >
-        <div
-          className={buttonLabelClassName}
-          style={{
-            minWidth: '140px',
+    <>
+      <div>
+        <button
+          onClick={() => {
+            handleNewToneClick()
           }}
-          onAnimationStart={handleButtonLabelAnimationStart}
-          onAnimationEnd={handleButtonLabelAnimationEnd}
+          className={buttonClassName}
+          onAnimationEnd={handleButtonAnimationEnd}
         >
-          {buttonLabel}
-        </div>
-      </button>
-    </div>
+          <div
+            className={buttonLabelClassName}
+            style={{
+              minWidth: '140px',
+            }}
+            onAnimationStart={handleButtonLabelAnimationStart}
+            onAnimationEnd={handleButtonLabelAnimationEnd}
+          >
+            {buttonLabel}
+          </div>
+        </button>
+      </div>
+      <div className="byline">
+        A collection of fun concepts by Anthony Peluso-Cook. <a href ="https://fitd.tech" className="fitd-link">See my other projects.</a>
+      </div>
+    </>
   )
 }
 
