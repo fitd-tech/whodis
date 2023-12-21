@@ -27,6 +27,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
+  /* dvh accounts for menu bars on mobile - without this, the page exceeds the viewport height */
   height: 100dvh;
 }
 
