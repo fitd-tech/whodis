@@ -73,7 +73,12 @@ function App() {
         </button>
       </div>
       <div className="byline">
-        A collection of fun concepts by Anthony Peluso-Cook. <a href ="https://fitd.tech" className="fitd-link">See my other projects.</a>
+        <div className="byline-text">
+          A collection of fun concepts <span className="no-line-break">by Anthony Peluso-Cook.</span>
+        </div>
+        <div className="fitd-link">
+          <a href ="https://fitd.tech">See my other projects.</a>
+        </div>
       </div>
     </>
   )

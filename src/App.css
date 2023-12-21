@@ -178,10 +178,27 @@
 }
 
 .byline {
+  min-width: 100%;
   position: absolute;
   bottom: 10px;
   right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
   font-size: 1em;
   font-family: monospace;
   color: rgba(255, 255, 255, 0.87);
+}
+
+.byline-text {
+  text-align: right;
+}
+
+.fitd-link {
+  margin-left: 10px;
+}
+
+.no-line-break {
+  white-space: nowrap;
 }
