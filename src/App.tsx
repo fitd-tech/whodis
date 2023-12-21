@@ -74,7 +74,7 @@ function App() {
       </div>
       <div className="byline">
         <div className="byline-text">
-          A collection of fun concepts <span className="no-line-break">by Anthony Peluso-Cook.</span>
+          A collection of fun concepts <span className="no-line-break">by <a href="mailto:tony@fitd.tech">Anthony Peluso-Cook</a>.</span>
         </div>
         <div className="fitd-link">
           <a href ="https://fitd.tech">See my other projects.</a>
