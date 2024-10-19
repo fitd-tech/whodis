@@ -52,6 +52,10 @@ button:hover {
   border-color: #dfee6b;
 }
 
+.no-pointer {
+  cursor: default;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

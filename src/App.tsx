@@ -23,7 +23,7 @@ function App() {
 
   function handleButtonAnimationEnd(e: React.AnimationEvent) {
     if (e.animationName === 'boi') {
-      setButtonClassName('new-tones-button ng-boing')
+      setButtonClassName('new-tones-button ng-boing no-pointer')
     } else if (e.animationName === 'glow-down') {
       setButtonClassName('new-tones-button')
     }
@@ -31,7 +31,7 @@ function App() {
 
   function handleButtonLabelAnimationStart(e: React.AnimationEvent) {
     if (e.animationName === 'who-dis-slide-out') {
-      setButtonClassName('new-tones-button glow-down')
+      setButtonClassName('new-tones-button glow-down no-pointer')
     }
   }
 
@@ -45,6 +45,7 @@ function App() {
       setButtonLabel('✨ new tone')
       setButtonLabelClassName('new-tone-slide-in')
     } else if (e.animationName === 'new-tone-slide-in') {
+      setButtonClassName('new-tones-button')
       setButtonLabelClassName('')
       setAnimatingButton(false)
     }
